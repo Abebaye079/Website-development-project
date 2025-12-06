@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title> Class Schedule & Pricing </title>
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="main-header">
         <div class="header-container">
-            <a href="index.html" class="logo"> Lissan Language School </a>
+            <a href="index.html" class="logo"> <img src="images/logo.png" alt="Lissan logo"> Lissan Language School </a>
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link"> Home </a></li>
-                    <li><a href="courses.html" class="nav-link"> Courses </a></li>
                     <li><a href="about.html" class="nav-link"> About Us</a></li>
+                    <li><a href="courses.html" class="nav-link"> Courses </a></li>
                     <li><a href="schedule.html" class="nav-link"> Schedule & Prices </a></li>
-                    <li><a href="resources.html" class="nav-link"> Resources </a></li>
-
                 </ul>
             </nav>
         </div>
@@ -36,258 +35,290 @@
             <h2>Available Classes & Pricing</h2>
             <p class="section-description">Check out the available times and prices for each language and level.</p>
 
-            <div class="schedule-grid">
-                <div class="schedule-card">
-                    <h3>Amharic- Beginner</h3>
-                    <p><b>Day:</b> Monday & Wednesday</p>
-                    <p><b>Time:</b>10:00 AM ET / 7:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Amharic- Intermediate</h3>
-                    <p><b>Day:</b> Tuesday & Thursday</p>
-                    <p><b>Time:</b> 2:00 PM ET / 10:00 AM PST </p>
-                    <p><b>Duration:</b> 10 weeks</p>
-                    <P><b>Price:</b> 2000 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Amharic- Advanced</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 10:00 AM ET / 6:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 3000 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Level</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                        <th>Enroll</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Amharic-->
+                    <tr>
+                        <td rowspan="3">Amharic</td>
+                        <td>Beginner</td>
+                        <td>Monday & Wednesday</td>
+                        <td>10:00 AM ET / 7:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>2:00 PM ET / 10:00 AM PST</td>
+                        <td>10 weeks</td>
+                        <td>2000 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Advanced</td>
+                        <td>Saturday</td>
+                        <td>10:00 AM ET / 6:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>3000 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
 
-                <div class="schedule-card">
-                    <h3>Afaan Oromoo- Beginner</h3>
-                    <p><b>Day:</b> Monday & Thursday</p>
-                    <p><b>Time:</b> 11:00 AM ET / 7:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Afaan Oromoo- Intermediate</h3>
-                    <p><b>Day:</b> Tuesday & Friday</p>
-                    <p><b>Time:</b> 3:00 PM ET / 11:00 AM PST </p>
-                    <p><b>Duration:</b> 10 weeks</p>
-                    <P><b>Price:</b> 2000 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Afaan Oromoo- Conversation</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 1:00 PM ET / 9:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 2500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+                    <!--Afaan Oromoo-->
+                    <tr>
+                        <td rowspan="3">Afaan Oromoo</td>
+                        <td>Beginner</td>
+                        <td>Monday & Thursday</td>
+                        <td>11:00 AM ET / 7:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>Tuesday & Friday</td>
+                        <td>3:00 PM ET / 11:00 AM PST</td>
+                        <td>10 weeks</td>
+                        <td>2000 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Conversation</td>
+                        <td>Saturday</td>
+                        <td>1:00 PM ET / 9:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>2500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>  
 
-                <div class="schedule-card">
-                    <h3>Tigrigna- Reading & Writing</h3>
-                    <p><b>Day:</b> Monday & Wednesday</p>
-                    <p><b>Time:</b> 2:00 PM ET / 10:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1400 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Tigrigna- Speaking Lessons</h3>
-                    <p><b>Day:</b> Tuesday & Thursday</p>
-                    <p><b>Time:</b> 10:00 AM ET / 6:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 2000 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Tigrigna- Cultural Insights</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 3:00 PM ET / 11:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 2200 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+                    <!--Tigrigna-->
+                    <tr>    
+                        <td rowspan="3">Tigrigna</td>
+                        <td>Reading & Writing</td>
+                        <td>Monday & Wednesday</td>
+                        <td>2:00 PM ET / 10:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>1400 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Speaking Lessons</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>10:00 AM ET / 6:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>2000 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cultural Insights</td>
+                        <td>Saturday</td>
+                        <td>3:00 PM ET / 11:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>2200 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
 
-                <div class="schedule-card">
-                    <h3>Somali- Beginner to Advanced</h3>
-                    <p><b>Day:</b> Monday & Wednesday</p>
-                    <p><b>Time:</b> 4:00 PM ET / 12:00 PM PST </p>
-                    <p><b>Duration:</b> 10 weeks</p>
-                    <P><b>Price:</b> 3000 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Somali- Pronunciation Training</h3>
-                    <p><b>Day:</b> Tuesday & Thursday</p>
-                    <p><b>Time:</b> 1:00 PM ET / 9:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Somali- Culture & Traditions</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 11:00 AM ET / 7:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 1800 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+                    <!--Somali-->
+                    <tr>
+                        <td rowspan="3">Somali</td>
+                        <td>Beginner to Advanced</td>
+                        <td>Monday & Wednesday</td>
+                        <td>4:00 PM ET / 12:00 PM PST</td>
+                        <td>10 weeks</td>
+                        <td>3000 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pronunciation Training</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>1:00 PM ET / 9:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Culture & Traditions</td>
+                        <td>Saturday</td>
+                        <td>11:00 AM ET / 7:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>1800 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
 
-                <div class="schedule-card">
-                    <h3>Ge'ez- vocabulary</h3>
-                    <p><b>Day:</b> Monday & Friday</p>
-                    <p><b>Time:</b> 9:00 AM ET / 5:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1400 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Ge'ez- Conversation Practice</h3>
-                    <p><b>Day:</b> Tuesday & Thursday</p>
-                    <p><b>Time:</b> 11:00 AM ET / 7:00 AM PST </p>
-                    <p><b>Duration:</b> 10 weeks</p>
-                    <P><b>Price:</b> 2000 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Ge'ez- Grammar Foundations</h3>
-                    <p><b>Day:</b> wednesday and Saturday</p>
-                    <p><b>Time:</b> 2:00 PM ET / 10:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 2200 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+                    <!--Ge'ez-->
+                    <tr>
+                        <td rowspan="3">Ge'ez</td>
+                        <td>Vocabulary</td>
+                        <td>Monday & Friday</td>
+                        <td>9:00 AM ET / 5:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>1400 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Conversation Practice</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>11:00 AM ET / 7:00 AM PST</td>
+                        <td>10 weeks</td>
+                        <td>2000 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Grammar Foundations</td>
+                        <td>Wednesday and Saturday</td>
+                        <td>2:00 PM ET / 10:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>2200 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>   
 
-                <div class="schedule-card">
-                    <h3>Afar- Conversational Afar</h3>
-                    <p><b>Day:</b> Monday & Wednesday</p>
-                    <p><b>Time:</b> 10:00 AM ET / 7:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Afar- Vocabulary Building</h3>
-                    <p><b>Day:</b> Tuesday & Thursday</p>
-                    <p><b>Time:</b> 2:00 PM ET / 11:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 1800 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Afar- Cultural Traditions</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 12:00 PM ET / 9:00 AM PST </p>
-                    <p><b>Duration:</b> 4 weeks</p>
-                    <P><b>Price:</b> 1200 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+                    <!--Afar-->
+                    <tr>
+                        <td rowspan="3">Afar</td>
+                        <td>Conversational Afar</td>
+                        <td>Monday & Wednesday</td>
+                        <td>10:00 AM ET / 7:00 AM PST</td>
+                        <td>8 weeks</td>    
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Vocabulary Building</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>2:00 PM ET / 11:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>1800 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cultural Traditions</td>
+                        <td>Saturday</td>
+                        <td>12:00 PM ET / 9:00 AM PST</td>
+                        <td>4 weeks</td>
+                        <td>1200 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>   
 
-                <div class="schedule-card">
-                    <h3>Nuer- Conversational Nuer</h3>
-                    <p><b>Day:</b> Monday & Thursday</p>
-                    <p><b>Time:</b> 11:00 AM ET / 8:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Nuer- Pronunciation & Basic Grammar</h3>
-                    <p><b>Day:</b> Tuesday & Friday</p>
-                    <p><b>Time:</b> 3:00 PM ET / 12:00 PM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 1800 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Nuer- Cultural Traditions & Customs</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 1:00 PM ET / 10:00 AM PST </p>
-                    <p><b>Duration:</b> 4 weeks</p>
-                    <P><b>Price:</b> 1200 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+                    <!--Nuer-->
+                    <tr>
+                        <td rowspan="3">Nuer</td>
+                        <td>Conversational Nuer</td>
+                        <td>Monday & Thursday</td>
+                        <td>11:00 AM ET / 8:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pronunciation & Basic Grammar</td>
+                        <td>Tuesday & Friday</td>
+                        <td>3:00 PM ET / 12:00 PM PST</td>
+                        <td>6 weeks</td>
+                        <td>1800 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cultural Traditions & Customs</td>
+                        <td>Saturday</td>
+                        <td>1:00 PM ET / 10:00 AM PST</td>
+                        <td>4 weeks</td>
+                        <td>1200 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>   
 
-                <div class="schedule-card">
-                    <h3>Hadiyya- Basic to Intermediate Levels</h3>
-                    <p><b>Day:</b> Monday & Wednesday</p>
-                    <p><b>Time:</b> 2:00 PM ET / 11:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Hadiyya- Pronunciation Practice</h3>
-                    <p><b>Day:</b> Tuesday & Thursday</p>
-                    <p><b>Time:</b> 10:00 AM ET / 7:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 2000 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Hadiyya- Local Customs & Culture</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 3:00 PM ET / 12:00 PM PST </p>
-                    <p><b>Duration:</b> 4 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
+                    <!--Hadiyya-->
+                    <tr>
+                        <td rowspan="3">Hadiyya</td>
+                        <td>Basic to Intermediate Levels</td>
+                        <td>Monday & Wednesday</td>
+                        <td>2:00 PM ET / 11:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pronunciation Practice</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>10:00 AM ET / 7:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>2000 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Local Customs and culture </td>
+                        <td>Saturday</td>
+                        <td>3:00 PM ET / 12:00 PM PST</td>
+                        <td>4 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>   
 
-                <div class="schedule-card">
-                    <h3>Gurage- conversational Gurage</h3>
-                    <p><b>Day:</b> Monday & Thursday</p>
-                    <p><b>Time:</b> 1:00 PM ET / 10:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Gurage- Grammar Essentials</h3>
-                    <p><b>Day:</b> Tuesday & Friday</p>
-                    <p><b>Time:</b> 11:00 AM ET / 8:00 AM PST </p>
-                    <p><b>Duration:</b> 6 weeks</p>
-                    <P><b>Price:</b> 1900 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Gurage- Cultural Practices</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 12:00 PM ET / 9:00 AM PST </p>
-                    <p><b>Duration:</b> 4 weeks</p>
-                    <P><b>Price:</b> 1200 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-
-                <div class="schedule-card">
-                    <h3>Sidamo- Beginner level</h3>
-                    <p><b>Day:</b> Monday & Wednesday</p>
-                    <p><b>Time:</b> 2:00 PM ET / 11:00 AM PST </p>
-                    <p><b>Duration:</b> 8 weeks</p>
-                    <P><b>Price:</b> 1500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Sidamo- Intermediate Level</h3>
-                    <p><b>Day:</b> Tuesday & Thursday</p>
-                    <p><b>Time:</b> 10:00 AM ET / 7:00 AM PST </p>
-                    <p><b>Duration:</b> 10 weeks</p>
-                    <P><b>Price:</b> 2100 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-                <div class="schedule-card">
-                    <h3>Sidamo- Advanced Level</h3>
-                    <p><b>Day:</b> Saturday</p>
-                    <p><b>Time:</b> 3:00 PM ET / 12:00 PM PST </p>
-                    <p><b>Duration:</b> 12 weeks</p>
-                    <P><b>Price:</b> 2500 ETB </P>
-                    <a href="schedule.html" class="btn-secondary">Enroll</a>
-                </div>
-
-            </div>
+                    <!--Gurage-->
+                    <tr>
+                        <td rowspan="3">Gurage</td>
+                        <td>Conversational Gurage</td>
+                        <td>Monday & Thursday</td>
+                        <td>1:00 PM ET / 10:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Grammar Essentials</td>
+                        <td>Tuesday & Friday</td>
+                        <td>11:00 AM ET / 8:00 AM PST</td>
+                        <td>6 weeks</td>
+                        <td>1900 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cultural practices</td>
+                        <td>Saturday</td>
+                        <td>12:00 PM ET / 9:00 AM PST</td>
+                        <td>4 weeks</td>
+                        <td>1200 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>  
+                    
+                    <!--Sidamo-->
+                    <tr>
+                        <td rowspan="3">Sidamo</td>
+                        <td>Beginner Level</td>
+                        <td>Monday & Wednesday</td>
+                        <td>2:00 PM ET / 11:00 AM PST</td>
+                        <td>8 weeks</td>
+                        <td>1500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate Level</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>10:00 AM ET / 7:00 AM PST</td>
+                        <td>10 weeks</td>
+                        <td>2100 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Level</td>
+                        <td>Saturday</td>
+                        <td>3:00 PM ET / 12:00 PM PST</td>
+                        <td>12 weeks</td>
+                        <td>2500 ETB</td>
+                        <td><a href="schedule.html" class="btn-secondary">Enroll</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section class="content-section light-bg">
