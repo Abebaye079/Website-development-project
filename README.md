@@ -83,8 +83,10 @@ project-root/
 ## Screenshots
 
 ![Home Page](images/Homepage.png)
+
 ![Home Page](images/Homepage2.png)
-![About Page](images/AboutPage.png)
+
+![About Page](images/Aboutpage.png)
 
 ---
 
