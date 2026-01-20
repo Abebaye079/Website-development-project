@@ -3,201 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title> Course Catalog & Levels </title>
+    <title>Course Catalog & Levels</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
-            <a href="index.html" class="logo"> <img src="images/logo.png" alt="Lissan logo"> Lissan Language School </a>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link"> Home </a></li>
-                    <li><a href="about.html" class="nav-link"> About Us</a></li>
-                    <li><a href="courses.html" class="nav-link"> Courses </a></li>               
-                    <li><a href="schedule.html" class="nav-link"> Schedule & Prices </a></li>
-                </ul>
-            </nav>
-            <a href="login.html" class="login-button"> Login </a>
+
+<!-- Header -->
+<header class="main-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Lissan logo"> Lissan Language School
+        </a>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule & Prices</a></li>
+            </ul>
+        </nav>
+
+        <a href="login.html" class="login-button">Login</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Lissan Course Catalog</h1>
+            <p>Choose from Ethiopia's most widely spoken and culturally rich languages.</p>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="about-hero">
-            <div class="about-hero-content">
-                <h1>Lissan Course Catalog</h1>
-                <p>Choose from Ethiopia's most widely spoken and cultuarally rich languages. </p>
-            </div>
-        </section>
-        
-        <section class="courses-section">
-            <div class="course-container">
-                
-                <!--Amharic-->
-                <div id="amharic" class="course-card">
-                    <div class="course-content">
-                        <h3>Amharic</h3>
-                        <p>Beginner to Advanced courses focusing on grammar & everyday communication.</p>
-                        <ul>
-                            <li> Beginner Level </li>
-                            <li> Intermediate Level </li>
-                            <li> Advanced level </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
+    <!-- FILTER (ADDED) -->
+    <section class="course-filter-section">
+        <label for="levelFilter">Filter by level:</label>
+        <select id="levelFilter">
+            <option value="all">All Levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="conversation">Conversation</option>
+        </select>
+    </section>
 
-                <!--Afan Oromoo-->
-                <div id="afan-oromoo" class="course-card">
-                    <div class="course-content">
-                        <h3>Afan Oromoo</h3>
-                        <p>Strength your Afan Oromoo skills with structured lessons and pronunication practice. </p>
-                        <ul>
-                            <li> Beginner Level </li>
-                            <li> Intermediate Level </li>
-                            <li> Conversation Practice </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Tigrigna-->
-                <div id="tigrigna" class="course-card">
-                    <div class="course-content">
-                        <h3>Tigrigna</h3>
-                        <p>Ideal for students wanting to master essential vocabulary and communicate confidently.</p>
-                        <ul>
-                            <li> Reading & Writing </li>
-                            <li> speaking Lessons </li>
-                            <li> Cultural Insights </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Somali-->
-                <div id="somali" class="course-card">
-                    <div class="course-content">
-                        <h3>Somali</h3>
-                        <p>A culture and conversational course that helps you speak Somali in real life situations.</p>
-                        <ul>
-                            <li> Beginner to advanced </li>
-                            <li> Pronunciation Training </li>
-                            <li> Culture & Traditions </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Ge'ez-->
-                <div id="ge'ez" class="course-card">
-                    <div class="course-content">
-                        <h3>Ge'ez (ግዕዝ)</h3>
-                        <p>A classical Ethiopian language useful for Orthodox Church services, ancient manuscripts, and liturgy.</p>
-                        <ul>
-                            <li> Vocabulary </li>
-                            <li> Conversation Practice </li>
-                            <li> Grammar Foundations </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Afar-->
-                <div id="afar" class="course-card">
-                    <div class="course-content">
-                        <h3>Afar</h3>
-                        <p>Learn Afar essentials for communication and cultural understanding.</p>
-                        <ul>
-                            <li> Conversational Afar</li>
-                            <li> Vocabulary Building </li>
-                            <li> Cultural Traditions </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Nuer-->
-                <div id="nuer" class="course-card">
-                    <div class="course-content">
-                        <h3>Nuer</h3>
-                        <p>Learn Nuer language basics with an emphasis on conversational skills and cultural knowledge.</p>
-                        <ul>
-                            <li> Conversational Nuer</li>
-                            <li> Pronunciation and Basic Grammar </li>
-                            <li> Cultural Traditions & Customs. </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Haddiya-->
-                <div id="hadiyya" class="course-card">
-                    <div class="course-content">
-                        <h3>Hadiyya</h3>
-                        <p>Build Hadiyya fluency through immersive lessons and interaction.</p>
-                        <ul>
-                            <li> Basic to Intermediate Levels </li>
-                            <li> Pronunciation Practice </li>
-                            <li> Local Customs & Culture</li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Gurage-->
-                <div id="gurage" class="course-card">
-                    <div class="course-content">
-                        <h3>Gurage</h3>
-                        <p>Learn Gurage through practical conversation and cultural lessons.</p>
-                        <ul>
-                            <li> Conversational Gurage </li>
-                            <li> Grammar Essentials </li>
-                            <li> Cultural Practices </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-                </div>
-
-                <!--Sidamo-->
-                <div id="sidamo" class="course-card">
-                    <div class="course-content">
-                        <h3>Sidamo</h3>
-                        <p> Master Sidamo for effective communication in daily life.</p>
-                        <ul>
-                            <li> Beginner Level </li>
-                            <li> Intermediate Level </li>
-                            <li> Advanced Level </li>
-                        </ul>
-                    </div>
-                    <a href="schedule.html" class="btn-secondary"> View Schedule </a>
-            </div>
-            </section>
-    </main>
-
-    <footer class="Main-footer">
-        <div class="footer-container">
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="schedule.html"> Enrollment </a></li>
-                    <li><a href="courses.html">Find a Course</a></li>
-                    <li><a href="about.html">Our Teachers</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p> 123 Language Lane, Lissan Academy </p>
-                <p> Email: info@lissanacademy.edu </p>
-                <p> Phone:+251-911763421</p>
-            </div>
+    <!-- Courses -->
+    <section class="courses-section">
+        <div class="course-container" id="courseContainer">
+            <!-- JS injects cards -->
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lissan Language School. All rights reserved.</p>
+    </section>
+</main>
+
+<!-- Modal -->
+<div id="courseModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <ul id="modalLevels"></ul>
+        <a href="schedule.html" class="btn-secondary view-schedule">View Schedule</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="Main-footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="schedule.html">Enrollment</a></li>
+                <li><a href="courses.html">Find a Course</a></li>
+                <li><a href="about.html">Our Teachers</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>123 Language Lane, Lissan Academy</p>
+            <p>Email: info@lissanacademy.edu</p>
+            <p>Phone: +251-911763421</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Lissan Language School. All rights reserved.</p>
+    </div>
+</footer>
+
+<button id="scrollTopBtn" title="Go to top">↑</button>
+<script src="script.js"></script>
 </body>
 </html>

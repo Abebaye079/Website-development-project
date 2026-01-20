@@ -21,18 +21,54 @@
                 </ul>
             </nav>
             <a href="login.html" class="login-button"> Login </a>
+            <button class="menu-toggle" aria-label="Toggle navigation"> ☰</button>
         </div>
     </header>
 
     <main>
 
         <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Speak the Heart of Ethiopia.</h1>
-                <p>Master Amharic, Afan Oromoo, Tigrigna, and more with Lissan OnlineLanguage School`s expert-led, culturally rich courses.</p>
-                <a href="signup.html" class="cta-button large-cta">Create Account</a>
+            <div class="slider">
+                <div class="slides">
+                    <!-- Slide 1: Hero -->
+                    <div class="slide active">
+                        <img src="images/slider1.jpg" alt="Ethiopian students learning languages in person">
+                        <div class="hero-content">
+                            <h1>Speak the Heart of Ethiopia.</h1>
+                            <p>Master Amharic, Afan Oromoo, Tigrigna, and more with Lissan Language School`s expert-led, culturally rich courses in person.</p>
+                            <a href="signup.html" class="cta-button large-cta">Create Account</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="images/slider2.png" alt="Students in a classroom with Ethiopian tutor">
+                        <div class="hero-content">
+                            <h1>Learn Languages in Person</h1>
+                            <p>Join our immersive in-class sessions and practice speaking with expert Ethiopian tutors.</p>
+                            <a href="courses.html" class="cta-button large-cta">View Courses</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="images/slider3.png" alt="Cultural activities in Ethiopia with students">
+                        <div class="hero-content">
+                            <h1>Experience Ethiopia’s Culture Firsthand</h1>
+                            <p>Our courses combine language learning with Ethiopian traditions, music, and history.</p>
+                            <a href="about.html" class="cta-button large-cta">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+                <!-- Dots -->
+                 <div class="slider-dots"></div>
             </div>
         </section>
+
 
         <section id="course-highlights" class="content-section">
             <h2>Start Your Journey: Popular Ethiopian Languages</h2>
@@ -195,5 +231,7 @@
             <p>&copy; 2025 Lissan Language School. All rights reserved.</p>
         </div>
     </footer>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <script src="script.js"></script>
 </body>
 </html>
