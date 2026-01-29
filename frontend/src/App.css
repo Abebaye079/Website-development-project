@@ -381,3 +381,41 @@
   font-size: 0.9rem;
   color: #666;
 }
+
+
+.disabled-input {
+  background-color: #f9f9f9;
+  color: #555;
+  cursor: not-allowed;
+  border: 1px solid #ddd !important;
+}
+
+.profile-card {
+  background: #f4f4f4; /* Matches the light grey in your Figma image */
+}
+
+.course-item {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: inline-block;
+  margin: 5px;
+}
+
+.course-badge {
+  background: #fff;
+  border: 1px solid #007E3A;
+  color: #007E3A;
+  padding: 12px 25px;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.active-input {
+  border: 2px solid #007E3A !important;
+  background: #fff !important;
+}

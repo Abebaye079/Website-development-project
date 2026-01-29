@@ -9,6 +9,7 @@ import Schedule from './pages/Schedule';
 import About from './pages/About';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Profile from './pages/Profile';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
 
         <Footer />

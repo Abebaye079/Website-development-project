@@ -4,5 +4,11 @@
     "username": "Abebech Updated",
     "email": "Abebech@example.com",
     "password": "987654321"
+  },
+  {
+    "id": 2,
+    "username": "abebaye",
+    "email": "test@test.com",
+    "password": "123456"
   }
 ]

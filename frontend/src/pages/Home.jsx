@@ -104,7 +104,7 @@ function Home() {
 
                     {/* Benefits Card */}
                     <div className="info-card">
-                        <h2 className="section-title">Why Choose Lissan Online Language School?</h2>
+                        <h2 className="section-title">Why Choose Lissan Language School?</h2>
                         <div className="lists">
                             {benefits.map((item, index) => (
                                 <div className="list-item" key={index}>

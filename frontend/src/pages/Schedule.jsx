@@ -1,10 +1,60 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { scheduleData } from '../data/scheduleData';
 
 function Schedule() {
     const [isExpanded, setIsExpanded] = useState(false);
+    const navigate = useNavigate();
 
-    // Filter data: Show only first 3 courses if not expanded
+    // Get current user from storage
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    // --- ENROLLMENT LOGIC ---
+    const handleEnroll = async (courseName, rowData) => {
+        // 1. Check if user is logged in
+        if (!user || !user.email) {
+            alert("Please login to enroll in a course!");
+            navigate("/login");
+            return;
+        }
+
+        // 2. Prepare the full detail object from the table row
+        const enrollmentInfo = {
+            name: courseName,
+            level: rowData.level,
+            day: rowData.day,
+            time: rowData.time,
+            duration: rowData.duration,
+            price: rowData.price
+        };
+
+        console.log("Enrolling user:", user.email, "in:", enrollmentInfo);
+
+        try {
+            const response = await fetch("http://localhost:5000/enroll", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ 
+                    email: user.email, 
+                    courseDetails: enrollmentInfo 
+                }),
+            });
+
+            // 3. Handle the response from app.js
+            if (response.ok) {
+                alert(`Successfully enrolled in ${courseName} (${rowData.level})!`);
+                navigate("/profile"); // Redirect to show the new table entry
+            } else {
+                const errorData = await response.json();
+                console.error("Enrollment failed:", errorData.error);
+                alert(`Enrollment failed: ${errorData.error || "Please try again."}`);
+            }
+        } catch (err) {
+            console.error("Connection Error:", err);
+            alert("Could not connect to the server. Is your backend running?");
+        }
+    };
+
     const visibleSchedule = isExpanded ? scheduleData : scheduleData.slice(0, 3);
 
     return (
@@ -12,14 +62,13 @@ function Schedule() {
             <section className="about-hero">
                 <div className="about-hero-content">
                     <h1>Schedule and Pricing</h1>
-                    <p>Find the perfect class time for you and explore our affordable pricing plans. Flexible schedules for all time zones with expert native tutors.</p>
+                    <p>Find the perfect class time for you and explore our affordable pricing plans.</p>
                 </div>
             </section>
 
             <section className="content-section">
                 <h2 style={{ textAlign: 'center', marginTop: '40px' }}>Available Classes & Pricing</h2>
-                <p className="section-description" style={{ textAlign: 'center' }}>Check out the available times and prices for each language and level.</p>
-
+                
                 <table className="schedule-table">
                     <thead>
                         <tr>
@@ -37,7 +86,6 @@ function Schedule() {
                             <React.Fragment key={groupIndex}>
                                 {courseGroup.levels.map((row, rowIndex) => (
                                     <tr key={`${groupIndex}-${rowIndex}`} className="show">
-                                        {/* Only show the Course Name cell for the first level in the group */}
                                         {rowIndex === 0 && (
                                             <td rowSpan={courseGroup.levels.length} style={{ fontWeight: 'bold', color: '#007E3A' }}>
                                                 {courseGroup.course}
@@ -49,7 +97,13 @@ function Schedule() {
                                         <td>{row.duration}</td>
                                         <td style={{ fontWeight: 'bold' }}>{row.price}</td>
                                         <td>
-                                            <button className="btn-secondary" style={{ padding: '5px 15px', fontSize: '0.8rem' }}>Enroll</button>
+                                            <button 
+                                                className="btn-secondary" 
+                                                style={{ padding: '5px 15px', fontSize: '0.8rem', cursor: 'pointer' }}
+                                                onClick={() => handleEnroll(courseGroup.course, row)}
+                                            >
+                                                Enroll
+                                            </button>
                                         </td>
                                     </tr>
                                 ))}
@@ -65,37 +119,6 @@ function Schedule() {
                 >
                     {isExpanded ? "Show Less" : "Show Full Table"}
                 </button>
-            </section>
-
-            {/* PACKAGE DEALS SECTION */}
-            <section className="content-section light-bg" style={{ padding: '60px 10%' }}>
-                <h2 style={{ textAlign: 'center' }}>Promotions & Package Deals</h2>
-                <div className="package-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginTop: '30px' }}>
-                    <div className="package-card">
-                        <h3>Starter Package</h3>
-                        <p><b>Includes:</b> 3 sessions</p>
-                        <p><b>Price:</b> 1500 ETB</p>
-                        <button className="btn-secondary">Enroll</button>
-                    </div>
-                    <div className="package-card">
-                        <h3>Monthly Plan</h3>
-                        <p><b>Includes:</b> 12 sessions</p>
-                        <p><b>Price:</b> 5500 ETB</p>
-                        <button className="btn-secondary">Enroll</button>
-                    </div>
-                    <div className="package-card">
-                        <h3>Intensive</h3>
-                        <p><b>Includes:</b> 20 sessions</p>
-                        <p><b>Price:</b> 8500 ETB</p>
-                        <button className="btn-secondary">Enroll</button>
-                    </div>
-                    <div className="package-card">
-                        <h3>Family Discount</h3>
-                        <p><b>Includes:</b> 2+ People</p>
-                        <p><b>Discount:</b> 10% Off</p>
-                        <button className="btn-secondary">Enroll</button>
-                    </div>
-                </div>
             </section>
         </main>
     );

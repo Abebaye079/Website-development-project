@@ -62,7 +62,7 @@ function About() {
                 <div className="left-section">
                     <h2>Our Teaching Approach</h2>
                     <ul className="approach-list">
-                        <li>Live online classes with interactive speaking</li>
+                        <li>Classes with interactive speaking</li>
                         <li>Culturally immersive lessons (music, traditions)</li>
                         <li>Beginner to advanced levels</li>
                         <li>Supportive expert tutors</li>
